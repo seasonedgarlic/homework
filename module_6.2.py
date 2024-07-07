@@ -17,9 +17,9 @@ class Vehicle:
         print(f'{self.get_color()}')
         print(f'Владелец: {self.owner}')
     def set_color(self, new_color):
-        if new_color.upper() and new_color.lower() not in self.__COLOR_VARIANTS:
+        if new_color.upper() not in self.__COLOR_VARIANTS and new_color.lower() not in self.__COLOR_VARIANTS:
             print(f'Нельзя сменить цвет на {new_color}')
-        if new_color.upper() and new_color.lower() in self.__COLOR_VARIANTS:
+        if new_color.upper() in self.__COLOR_VARIANTS and new_color.lower() in self.__COLOR_VARIANTS:
             self.__color = new_color
 
 class Sedan(Vehicle):
