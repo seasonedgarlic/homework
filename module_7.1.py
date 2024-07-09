@@ -18,7 +18,7 @@ class Shop:
             self.opener = open(self.__file_name, 'r')
             if i.name not in self.opener.read():
                 self.opener = open(self.__file_name, 'a')
-                self.opener.writelines(f'{i}\n')
+                self.opener.write(f'{i}\n')
                 self.opener.close()
             else:
                 print(f'Продукт {i.name} уже есть в магазине.')
