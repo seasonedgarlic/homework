@@ -28,7 +28,7 @@ class Sedan(Vehicle):
         self.__PASSENGERS_LIMIT = 5
 
 
-_Vehicle__COLOR_VARIANTS = ['blue', 'red', 'green', 'black', 'white']
+_Vehicle__COLOR_VARIANTS = ['blue', 'red', 'green', 'black', 'white'] #сперва вписал это переопределение, потому что немного не понял пример из задачи, но в итоге решил оставить как упражнение в переопределении
 vehicle1 = Sedan('Fedos', 'Toyota Mark II', 500, 'blue')
 vehicle1.print_info()
 vehicle1.set_color('Pink')
