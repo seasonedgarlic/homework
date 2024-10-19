@@ -20,5 +20,5 @@ def sum_three(*args):
         res += i
     return res
 
-ololo = sum_three(2,3,6)
+ololo = sum_three(2, 3, 6)
 print(ololo)
